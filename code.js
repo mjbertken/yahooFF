@@ -1,11 +1,7 @@
 function testCDN(){
   return "Hello World";
 }
-var btn2 = document.createElement('button');
-$(btn2).attr('id','run-js2');
-$(btn2).html('run new js');
-$('#playersearch').append(btn2)
-$("body").on("click","#run-js2",function(){runNewJs()});
+
   function removeDumplicateValue(myArray){ 
       var newArray = [];
       $.each(myArray, function(key, value) {
@@ -17,68 +13,6 @@ $("body").on("click","#run-js2",function(){runNewJs()});
       });
       return newArray;
     }
-var div0 = document.createElement('div');
-var cb = document.createElement('button');
-$(cb).attr('class','copyBtn').html('c');
-$(div0).append(cb);
-var txtarea = document.createElement('textarea');
-var lenCount = document.createElement('span');
-var playerCount = document.createElement('span');
-$(lenCount).addClass('lenCount')
-$(playerCount).addClass('playerCount')
-$(div0).append(lenCount);
-$(txtarea).attr('id','stringifyoutput');
-$(div0).append(txtarea);
-$(div0).append(playerCount);
-$('#playersearch').append(div0);
-
-var div1 = document.createElement('div');
-var cb = document.createElement('button');
-$(cb).attr('class','copyBtn').html('c');
-$(div1).append(cb);
-var ta1 = document.createElement('textarea');
-var lenCount = document.createElement('span');
-$(lenCount).addClass('lenCount')
-$(div1).append(lenCount);
-$(ta1).attr('id','out1');
-$(div1).append(ta1);
-$('#playersearch').append(div1);
-
-var div2 = document.createElement('div');
-var cb = document.createElement('button');
-$(cb).attr('class','copyBtn').html('c');
-$(div2).append(cb);
-var ta2 = document.createElement('textarea');
-var lenCount = document.createElement('span');
-$(lenCount).addClass('lenCount')
-$(div2).append(lenCount);
-$(ta2).attr('id','out2');
-$(div2).append(ta2);
-$('#playersearch').append(div2);
-
-var div3 = document.createElement('div');
-var cb = document.createElement('button');
-$(cb).attr('class','copyBtn').html('c');
-$(div3).append(cb);
-var ta3 = document.createElement('textarea');
-var lenCount = document.createElement('span');
-$(lenCount).addClass('lenCount')
-$(div3).append(lenCount);
-$(ta3).attr('id','out3');
-$(div3).append(ta3);
-$('#playersearch').append(div3);
-
-var div4 = document.createElement('div');
-var cb = document.createElement('button');
-$(cb).attr('class','copyBtn').html('c');
-$(div4).append(cb);
-var ta4 = document.createElement('textarea');
-var lenCount = document.createElement('span');
-$(lenCount).addClass('lenCount')
-$(div4).append(lenCount);
-$(ta4).attr('id','out4');
-$(div4).append(ta4);
-$('#playersearch').append(div4);
 
 function copyToClipboard(elmId) {
   var copyText = document.getElementById(elmId);
