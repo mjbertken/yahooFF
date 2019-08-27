@@ -23,6 +23,9 @@ function copyToClipboard(elmId) {
 $( "body" ).on("click",".copyBtn",function(){copyToClipboard($(this).parent().find('textarea').attr('id'));});
 function runNewJs(){
   var dataType = $('#statselect').find('option:selected').html();
+  if(dataType=='Season (proj)'){
+   dataType='2019 Proj'; 
+  }
 var a = 0;  
  var playerArr = [];
    var prevArr = $('#stringifyoutput').text();
