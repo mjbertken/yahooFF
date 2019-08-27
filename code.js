@@ -22,6 +22,7 @@ function copyToClipboard(elmId) {
 }
 $( "body" ).on("click",".copyBtn",function(){copyToClipboard($(this).parent().find('textarea').attr('id'));});
 function runNewJs(){
+  var dataType = $('#statselect').find('option:selected').html();
 var a = 0;  
  var playerArr = [];
    var prevArr = $('#stringifyoutput').text();
@@ -68,6 +69,7 @@ var a = 0;
       }
       if(playerObj['name']){
         playerObj['Source']='Yahoo';
+        playerObj['Data Type']=dataType;
         playerObj['Data Date']=new Date();
         playerArr.push(playerObj);
       }
