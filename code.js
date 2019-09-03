@@ -97,6 +97,8 @@ var a = 0;
 }
 function updateLenCount(textElement){
   var len = $(textElement).text().length;
+  if(len>0){$(textElement).parent().css('display','block')};
+  if(len<1){$(textElement).parent().css('display','none')};
   $(textElement).parent().find('.lenCount').html(len);
 }
 function defColAdj(col){
